@@ -1,7 +1,8 @@
-$padding : 20px;
+$padding-xl : 20px 6rem;
+$padding-sm : 20px 1rem;
 %center{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -14,7 +15,7 @@ $padding : 20px;
 nav{
     background-color: transparent;
     @extend %center;
-    padding: $padding 0;
+    padding: $padding-xl;
     .left{
         @extend %row;
         img{
@@ -51,6 +52,7 @@ nav{
 @media screen and (max-width: 767px) {
     nav{
         flex-direction: column;
+        padding: $padding-sm;
         .left{
             margin-bottom: 20px;
         }

@@ -1,0 +1,156 @@
+$padding-xl : 0 6rem; 
+$padding-sm : 0 1rem; 
+.landing{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: calc(100vh - 90px);
+    padding: $padding-xl;
+    .left{
+        position: relative;
+        width: 50%;
+        .discount{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: fit-content;
+            width: 380px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: linear-gradient(125deg, #272727 0%, #11101D 100%);
+            p{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0 10px;
+                font-weight: 400;
+                text-transform: uppercase;
+                user-select: none;
+                svg{
+                    margin-right: 10px;
+                    color: var(--cyan-color);
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                div{
+                    color: rgba(255, 255, 255, 0.6);
+                    span{
+                        color: white;
+                    }
+                }
+            }
+        }
+        .desc{
+            h1{
+                font-size: 50px;
+                span{
+                    color: var(--cyan-color);
+                }
+            }
+        }
+        .light{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            width: 195px;
+            height: 324px;
+            flex-shrink: 0;
+            border-radius: 324px;
+            background: #FFF;
+            filter: blur(225px);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+        }
+        .btn{
+            display: flex;
+            right: 0px;
+            top: 70px;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #5CE1E6;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            text-align: center;
+            align-items: center;
+            cursor: pointer;
+            transition: .3s;
+            -webkit-transition: .3s ease-in-out;
+            -moz-transition: .3s ease-in-out;
+            -ms-transition: .3s ease-in-out;
+            -o-transition: .3s ease-in-out;
+            &:hover{
+                background-color: #5CE1E6;
+            }
+}
+    }
+    .right{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        img{
+           max-width: 100%;
+           max-height: 70vh;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .landing{
+        align-items: start;
+        height: calc(100vh - 126px);
+        padding: $padding-sm;
+        .left{
+            width: 100%;
+            .discount{
+                width: 100%;
+                font-size: 15px;
+            }
+            .desc h1{
+                font-size: 40px;
+            }
+            .btn{
+                right: 0;
+                top: 15%;
+            }
+        }
+        .right{
+            top: 85%;
+            z-index: -1;
+        }
+    }
+}
+@media screen and (min-width: 767px) and (max-width:1383px){
+    .landing{
+        align-items: start;
+        height: calc(100vh - 126px);
+        padding: $padding-sm;
+        .left{
+            width: 100%;
+            .desc h1{
+                font-size: 40px;
+            }
+            .btn{
+                right: 0;
+            }
+        }
+        .right{
+            top: 85%;
+            z-index: -1;
+        }
+    }
+}
