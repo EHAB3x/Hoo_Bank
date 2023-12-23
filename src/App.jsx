@@ -3,6 +3,7 @@ import Partners from './components/Partners/Partners'
 import Business from './components/business/Business'
 import Card from './components/card/Card'
 import Control from './components/control/Control'
+import Footer from './components/footer/Footer'
 import Landing from './components/landing/Landing'
 import Rates from './components/rates/Rates'
 import Stats from './components/stats/Stats'
@@ -22,6 +23,7 @@ function App() {
       <Rates />
       <Partners />
       <Subscribe />
+      <Footer />
     </>
   )
 }

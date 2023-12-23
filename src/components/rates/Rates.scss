@@ -110,8 +110,8 @@ $padding-sm :3rem 1rem;
 @media screen and (min-width: 767px) and (max-width:1023px){
     .rates{
         padding: $padding-sm;
-        .light{
-            right: -90%;
+        .light-blue{
+            display: none;
         }
         .top{
             flex-direction: column;
@@ -121,5 +121,11 @@ $padding-sm :3rem 1rem;
                 width: 100%;
             }
         }
-    }   
+        .bottom{
+            gap: 30px;
+            .rate{
+                margin-top: 15px;
+            }
+        }
+    }
 }

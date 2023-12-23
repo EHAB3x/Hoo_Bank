@@ -1,0 +1,108 @@
+footer {
+  background: rgba(11, 10, 12, 0.6);
+  padding: 3rem 6rem;
+  padding-bottom: 0;
+}
+footer .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #3F3E45;
+}
+footer .top .logo {
+  padding: 20px 0;
+}
+footer .top .logo img {
+  margin-bottom: 20px;
+}
+footer .top .logo p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 30px;
+}
+footer .top .links {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+}
+footer .top .links .list h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+footer .top .links .list ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .top .links .list ul li {
+  margin-left: 0;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+footer .top .links .list ul li:hover {
+  color: white;
+}
+footer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 30px;
+}
+footer .bottom .copyright p {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .bottom .media ul li svg {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 45px;
+    padding: 0rem 1rem;
+  }
+  footer .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .top .links {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  footer .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .bottom .media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  footer {
+    margin-top: 45px;
+    padding: 0rem 1rem;
+  }
+  footer .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

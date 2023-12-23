@@ -132,8 +132,8 @@
   .rates {
     padding: 3rem 1rem;
   }
-  .rates .light {
-    right: -90%;
+  .rates .light-blue {
+    display: none;
   }
   .rates .top {
     -webkit-box-orient: vertical;
@@ -145,5 +145,11 @@
   .rates .top h2 {
     font-size: 30px;
     width: 100%;
+  }
+  .rates .bottom {
+    gap: 30px;
+  }
+  .rates .bottom .rate {
+    margin-top: 15px;
   }
 }

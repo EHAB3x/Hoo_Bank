@@ -1,0 +1,91 @@
+$padding-xl : 3rem 6rem; 
+$padding-sm :0rem 1rem; 
+footer{
+    background: rgba(11, 10, 12, 0.60);
+    padding: $padding-xl;
+    padding-bottom: 0;
+    .top{
+        display: flex;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #3F3E45;
+        .logo{
+            padding: 20px 0;
+            img{
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 13px;
+                color: rgba($color: #fff, $alpha: 0.7);
+                margin-left: 30px;
+            }
+        }
+        .links{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            width: 100%;
+            .list{
+                h3{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                ul{
+                    flex-direction: column;
+                    li{
+                        margin-left: 0;
+                        color:rgba($color:#fff,$alpha: 0.7);
+                        transition: .3s ease-in-out;
+                        -webkit-transition: .3s ease-in-out;
+                        -moz-transition: .3s ease-in-out;
+                        -ms-transition: .3s ease-in-out;
+                        -o-transition: .3s ease-in-out;
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+        .copyright p{
+            color: rgba($color: #fff, $alpha: 0.7);
+        }
+        .media ul li svg{
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer{
+        margin-top: 45px;
+        padding: $padding-sm;
+        .top{
+            flex-direction: column;
+            .links{
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+        .bottom{
+            flex-direction: column;
+            .media{
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 767px) and (max-width:1023px){
+    footer{
+        margin-top: 45px;
+        padding: $padding-sm;
+        .top{
+            flex-direction: column;
+        }
+    }
+}
