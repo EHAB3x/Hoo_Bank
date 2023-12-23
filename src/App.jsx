@@ -1,4 +1,5 @@
 import './App.css'
+import Partners from './components/Partners/Partners'
 import Business from './components/business/Business'
 import Card from './components/card/Card'
 import Control from './components/control/Control'
@@ -18,6 +19,7 @@ function App() {
       <Control />
       <Card />
       <Rates />
+      <Partners />
     </>
   )
 }
