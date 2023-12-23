@@ -6,6 +6,7 @@ import Control from './components/control/Control'
 import Landing from './components/landing/Landing'
 import Rates from './components/rates/Rates'
 import Stats from './components/stats/Stats'
+import Subscribe from './components/subscribe/Subscribe'
 import Nav from './main_components/nav/Nav'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Card />
       <Rates />
       <Partners />
+      <Subscribe />
     </>
   )
 }
