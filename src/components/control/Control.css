@@ -1,0 +1,110 @@
+.control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 100px;
+  padding: 0 6rem;
+}
+.control .light {
+  position: absolute;
+  left: -25%;
+  transform: translateX(50%);
+  width: 405px;
+  height: 471px;
+  -webkit-transform: rotate(176.617deg);
+          transform: rotate(176.617deg);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 471px;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-filter: blur(375px);
+          filter: blur(375px);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
+.control .left img {
+  max-width: 530px;
+  max-height: 455px;
+}
+.control .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 20%;
+}
+.control .right .desc h2 {
+  font-size: 40px;
+}
+.control .right .desc p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.control .right .stores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .control {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 1rem;
+    gap: 50px;
+  }
+  .control .light {
+    left: -50%;
+  }
+  .control .left img {
+    max-width: 100%;
+  }
+  .control .right {
+    margin-left: 0;
+  }
+  .control .right .desc h2 {
+    margin-top: 0;
+  }
+  .control .right .desc p {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .control {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 1rem;
+    gap: 50px;
+  }
+  .control .left img {
+    max-width: 100%;
+  }
+  .control .right {
+    margin-left: 0;
+  }
+  .control .right .desc h2 {
+    margin-top: 0;
+  }
+  .control .right .desc p {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1250px) {
+  .control .right {
+    margin-left: 0;
+  }
+}
