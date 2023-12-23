@@ -4,7 +4,7 @@ import { SiSpringsecurity } from "react-icons/si";
 import { FaTelegramPlane } from "react-icons/fa";
 const Business = () => {
   return (
-    <div className="business">
+    <div className="business" id="features">
         <div className="left">
             <h2>You do the business,<br />we’ll handle the money.</h2>
             <p>With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</p>

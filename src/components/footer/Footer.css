@@ -48,6 +48,11 @@ footer .top .links .list ul li {
 }
 footer .top .links .list ul li:hover {
   color: white;
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
 }
 footer .bottom {
   display: -webkit-box;

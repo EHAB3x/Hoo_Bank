@@ -6,7 +6,7 @@ import userThree from "../../assets/Rate3.png"
 
 const Rates = () => {
   return (
-    <div className='rates'>
+    <div className='rates' id='about'>
         <div className="top">
             <h2>What people are <br /> saying about us</h2>
             <p>Everything you need to accept card payments <br /> and grow your business anywhere on the planet.</p>

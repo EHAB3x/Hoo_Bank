@@ -4,7 +4,7 @@ import appStore from "../../assets/appStore.svg";
 import googlePlay from "../../assets/googlePlay.svg";
 const Control = () => {
   return (
-    <div className="control">
+    <div id="download" className="control">
         <div className="left">
             <img src={invoice} alt="" />
         </div>
