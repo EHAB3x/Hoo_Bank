@@ -1,0 +1,76 @@
+$padding-xl :6rem; 
+$padding-sm :3rem 1rem; 
+.card{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: $padding-xl;
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .desc{
+            h2{
+                font-size: 40px;
+            }
+            p{
+                font-size: 13px;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        button{
+            width: 160px;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: linear-gradient(158deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border: 0;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+    .right img{
+        max-width: 513px;
+        max-height: 449px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card{
+        flex-direction: column;
+        padding: $padding-sm;
+        .left .desc{
+            h2{
+                font-size: 30px;
+            }
+            p{
+                margin-bottom: 30px;
+            }
+        }
+        .right img{
+            max-width: 100%;
+        }
+    }
+}
+@media screen and (min-width: 767px) and (max-width:1023px){
+    .card{
+        flex-direction: column;
+        padding: $padding-sm;
+        .left .desc{
+            h2{
+                font-size: 30px;
+            }
+            p{
+                margin-bottom: 30px;
+            }
+        }
+        .right img{
+            max-width: 100%;
+        }
+    }
+}

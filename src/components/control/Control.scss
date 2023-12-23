@@ -20,7 +20,7 @@ $padding-sm :3rem 1rem;
         -moz-transform: translateX(50%);
         -ms-transform: translateX(50%);
         -o-transform: translateX(50%);
-}
+    }
     .left img{
         max-width: 530px;
         max-height: 455px;
@@ -61,6 +61,7 @@ $padding-sm :3rem 1rem;
             .desc{
                 h2{
                     margin-top: 0;
+                    font-size: 30px;
                 }
                 p{
                     margin-bottom: 45px;
