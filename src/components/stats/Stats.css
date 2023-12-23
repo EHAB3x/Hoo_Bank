@@ -24,6 +24,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 15px;
+  text-transform: uppercase;
 }
 .stats span {
   display: block;
@@ -35,6 +36,9 @@
 @media screen and (max-width: 767px) {
   .stats {
     padding: 40px;
+  }
+  .stats span {
+    display: none;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {

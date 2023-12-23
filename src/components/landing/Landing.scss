@@ -1,10 +1,10 @@
 $padding-xl : 0 6rem; 
-$padding-sm : 0 1rem; 
+$padding-sm :3rem 1rem; 
 .landing{
     display: flex;
     justify-content: start;
     align-items: center;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 180px);
     padding: $padding-xl;
     .left{
         position: relative;
@@ -124,7 +124,7 @@ $padding-sm : 0 1rem;
 @media screen and (max-width: 767px) {
     .landing{
         align-items: start;
-        height: calc(100vh - 126px);
+        height: fit-content;
         padding: $padding-sm;
         .left{
             width: 100%;
@@ -141,15 +141,14 @@ $padding-sm : 0 1rem;
             }
         }
         .right{
-            top: 85%;
-            z-index: -1;
+            display: none;
         }
     }
 }
-@media screen and (min-width: 767px) and (max-width:1383px){
+@media screen and (min-width: 767px) and (max-width:1023px){
     .landing{
         align-items: start;
-        height: calc(100vh - 126px);
+        height: fit-content;
         padding: $padding-sm;
         .left{
             width: 100%;
@@ -161,8 +160,7 @@ $padding-sm : 0 1rem;
             }
         }
         .right{
-            top: 85%;
-            z-index: -1;
+            display: none;
         }
     }
 }
