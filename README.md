@@ -1,4 +1,4 @@
-# HooBank - Modern UI/UX website using React.js & Tailwind CSS
+# HooBank - Modern UI/UX website using React.js & SAAS
 ![alt](./land.png)
 
 Live Preview : https://eh-hoobank.netlify.app/
